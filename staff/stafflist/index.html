@@ -1,7 +1,4 @@
-﻿<!DOCTYPE html>
-<html>
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-<head>
+<html><head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132581402-1"></script>
 <script>
@@ -11,10 +8,6 @@
 
   gtag('config', 'UA-132581402-1');
 </script>
-<meta name="google-site-verification" content="TEKKleXSHVSeEmXOJlyp4j0SKYJDly4wLqpfhDxl-2o" />
-<title>The Secret Laboratory</title>
-<link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
-
 <style>
 * {
     box-sizing: border-box;
@@ -60,7 +53,7 @@ body {
   right: 0;
   background: rgba(0, 0, 0, 0.7);
   transition: opacity 500ms;
-  visibility: hidden;
+  visibility: visible;
   opacity: 0;
   z-index: 10;
 }
@@ -71,14 +64,15 @@ body {
 }
 
 .popup {
-  margin: 70px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 30%;
+  margin: 40px auto;
+  padding: 0px;
+  border-radius: 0px;
+  width: 1400;
+  height: 22;
   position: relative;
+  opacity: 500;
   transition: all 5s ease-in-out;
-  z-index: 10;
+  z-index: 0;
 }
 
 .popup h2 {
@@ -133,42 +127,42 @@ body {
 
 .crossfade > slideshow:nth-child(1) { 
     animation-delay: 0s;
-    background-image: url("./imgs/slide6.jpg");
+    background-image: url("http://thesecretlaboratory.ddns.net/imgs/slide6.jpg");
 }
 
 .crossfade > slideshow:nth-child(2) {
     animation-delay: 3s;
-    background-image: url("./imgs/slide7.jpg");
+    background-image: url("http://thesecretlaboratory.ddns.net/imgs/slide7.jpg");
 }
 
 .crossfade > slideshow:nth-child(3) {
     animation-delay: 6s;
-    background-image: url("./imgs/slide3.jpg");
+    background-image: url("http://thesecretlaboratory.ddns.net/imgs/slide3.jpg");
 }
 
 .crossfade > slideshow:nth-child(4) {
     animation-delay: 9s;
-    background-image: url("./imgs/slide8.jpg");
+    background-image: url("http://thesecretlaboratory.ddns.net/imgs/slide8.jpg");
 }
 
 .crossfade > slideshow:nth-child(5) {
     animation-delay: 12s;
-    background-image: url("./imgs/slide5.jpg");
+    background-image: url("http://thesecretlaboratory.ddns.net/imgs/slide5.jpg");
 }
 
 .crossfade > slideshow:nth-child(6) {
     animation-delay: 15s;
-    background-image: url("./imgs/slide1.jpg");
+    background-image: url("http://thesecretlaboratory.ddns.net/imgs/slide1.jpg");
 }
 
 .crossfade > slideshow:nth-child(7) {
     animation-delay: 18s;
-    background-image: url("./imgs/slide2.jpg");
+    background-image: url("http://thesecretlaboratory.ddns.net/imgs/slide2.jpg");
 }
 
 .crossfade > slideshow:nth-child(8) {
     animation-delay: 21s;
-    background-image: url("./imgs/slide4.jpg");
+    background-image: url("http://thesecretlaboratory.ddns.net/imgs/slide4.jpg");
 
 }
 @keyframes 
@@ -193,14 +187,14 @@ imageAnimation {  0% {
 
 .content {
     position: fixed;
-	top: 37%;
+    bottom: 0;
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     width: 100%;
     padding: 20px;
 }
 
-#buttonCustom {
+.buttonCustom {
     width: 200px;
     font-size: 18px;
     padding: 10px;
@@ -211,28 +205,13 @@ imageAnimation {  0% {
     font-family: Courier;
 }
 
-#buttonCustom:hover {
+.buttonCustom:hover {
     background: #ddd;
-    color: black;
+    color:  ;
 }
 </style>
 </head>
 <body>
-
-<div id="contactus" class="overlay">
-	<div class="popup" align="center">
-		<h2><center>Contact Us</center></h2>
-		<a class="close" href="#">&times;</a>
-		<div class="contactcontent">
-		<h3>Discord</h3>
-            <a href="./discord.php"> https://discord.gg/5aWmpau</a>
-			<div align="center" id="contactcontent" class="contactcontent">
-			<iframe src="https://discordapp.com/widget?id=470342090547789825&theme=dark" width="311" height="390" allowtransparency="true" frameborder="0"></iframe>
-			</div>
-			<br><br>
-		</div>
-	</div>
-</div>
 <div class="crossfade">
   <slideshow></slideshow>
   <slideshow></slideshow>
@@ -243,67 +222,13 @@ imageAnimation {  0% {
   <slideshow></slideshow>
   <slideshow></slideshow>
 </div>
-
-<div class="content">
-    <h1>EU/EN The Secret Laboratory</h1>
-    <p>join us <a href="/discord.php"> here</a>.</p>
-    <a style="text-decoration:none" href="./apply" id=buttonCustom class="buttonCustom">Apply For Staff</a>
-    <a style="text-decoration:none" href="./blacklistappeal" id=buttonCustom class="buttonCustom">Blacklist Appeal</a>
-    <a style="text-decoration:none" href="#contactus" id=buttonCustom class="buttonCustom">Contact Us</a>
-    <a style="text-decoration:none" href="./forum" id=buttonCustom class="buttonCustom">Forum</a>
-    <a style="text-decoration:none" href="./login" id=buttonCustom class="buttonCustom">Staff Panel (still WIP)</a>
-    <a style="text-decoration:none" href="./staff" id=buttonCustom class="buttonCustom">Our Staff</a>
-    <a style="text-decoration:none" href="./aboutus" id=buttonCustom class="buttonCustom">About Us</a>
-</div>
-
-<script>
-var video = document.getElementById("slideshow");
-var btn = document.getElementById("buttonCustom");
-
-function openStorePage() {
-  window.open('http://store.steampowered.com/app/700330/SCP_Secret_Laboratory/');
-}
-
-function OpenApply() {
-  window.open('/apply');
-}
-
-function OpenBAppeal() {
-  window.open('/BlacklistAppeal');
-}
-
-function openContactPopup() {
-  window.open('#contactus','_self');
-}
-
-function openForum() {
-  window.open('/forum');
-}
-
-function openstaffpanel() {
-  window.open('/login');
-}
-</script>
-<script>
-$(document).ready(function($) {
- setTimeout(function() {
- $('.dark-bg').fadeIn('300', function() {
- $('.intro-bg').slideDown('400');
- });
- },4000);
- 
- $('.closePopUp').click(function(event) {
- $('.intro-bg').slideUp('300',function(){
- $(this).remove();
- $('.dark-bg').fadeOut('400', function() {
- $(this).remove();
- });
- });
- });
-});
-</script>
-
+<div class="popup">
+      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRfmPVwX2GopGQs7frpkD_SGFy_EIZZjyPQEHjWMq7FHSZ109FlwNnsXTmB0AJQXFlB7BywKmkNSy4s/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="1400" height="680"></iframe>
+     <p>
+        <a style="text-decoration:none" href="../" class="buttonCustom">Back</a>
+    </p>
+	  </div>
+<title>Staff List</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../imgs/sl.jpg">
 </body>
-
-
 </html>
