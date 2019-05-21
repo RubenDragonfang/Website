@@ -1,1 +1,1 @@
-this is wvere i got code form if i fuck up
+this is where i get code from if i fuck up
