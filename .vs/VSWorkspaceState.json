@@ -1,8 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\bots"
+    "\\aboutus",
+    "\\bots",
+    "\\s",
+    "\\search",
+    "\\s\\submitscreenshots"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }
