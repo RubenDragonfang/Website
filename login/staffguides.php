@@ -35,16 +35,17 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5vijJfKPWtY" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cIIov4KM-Uo" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <<textarea name="text" cols="45" rows="20">
-how to ban someone
-step one find the player id
+how to ban someone:
+1: find the player id
 https://cdn.discordapp.com/attachments/495695852556255264/509473400360534029/unknown.png
-the playerid is are the numbers between the ()
-then open the text based remote admin menue
+the player id is the numbers between the ()
+the player id is different for every player and changes every round
+2: open the text based remote admin section
 https://cdn.discordapp.com/attachments/495695852556255264/509473660503982120/unknown.png
-then type ban (the playerid) (ban duration in minuts) (reason here also include YOUR steam name so he knows who banned him cuz it may be false )
-also the player id is difrent for every player and changes every round
-you can also use discord to ban just go to #server-1 and type +list to get all the steamids and names copy the steamid of the right user and type
-+ban <steamidhere> 5h or m or d <reasonhere>
+3: type ban (playerid) (ban duration in minutes) (The reason for the ban, also include YOUR OWN steam name)
+
+you can also use discord to ban players just go to #server-1 and type +list to get all the id's and names. Copy the steamid of the right user and type
++ban <steamidhere> 5 or more hours, days or months  <reasonhere>
 </textarea>
 </body>
 </html>
